@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MG Mobile Accessories | Better Accessories, Better Connection</title>
+<meta name="description" content="MG Mobile Accessories - chargers, cables, earbuds, power banks, covers and more.">
+<style>
+:root{--yellow:#ffd21a;--dark:#07101a;--dark2:#101a26;--text:#17202b;--muted:#66717d;--bg:#f7f8fa;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+a{text-decoration:none;color:inherit}
+.top{background:#050b12;color:#fff;padding:9px 5%;display:flex;justify-content:space-between;gap:20px;font-size:13px;flex-wrap:wrap}
+.top span{margin-right:18px}.top b{color:var(--yellow)}
+nav{background:#09121d;color:#fff;padding:12px 5%;display:flex;align-items:center;justify-content:space-between;gap:20px;position:sticky;top:0;z-index:10;border-bottom:1px solid #253140}
+.logo{font-weight:900;font-size:24px;letter-spacing:-1px}.logo i{font-style:normal;color:var(--yellow)}.logo small{display:block;font-size:9px;letter-spacing:3px;color:#ddd}
+.links{display:flex;gap:23px;font-size:13px;align-items:center}.links a:hover{color:var(--yellow)}
+.cart{background:var(--yellow);color:#111;padding:9px 14px;border-radius:9px;font-weight:bold;cursor:pointer}
+.hero{background:radial-gradient(circle at 80% 45%,#34302a,#090d12 48%,#05080c);color:#fff;padding:72px 7%;min-height:510px;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-100px;bottom:-180px;width:480px;height:480px;border:90px solid var(--yellow);transform:rotate(25deg);opacity:.9}
+.hero-content{max-width:560px;position:relative;z-index:2}.eyebrow{color:var(--yellow);font-weight:bold;letter-spacing:2px}
+h1{font-size:clamp(45px,7vw,78px);line-height:.98;margin:14px 0}.hero h1 span{color:var(--yellow)}
+.hero p{font-size:18px;color:#d5dbe1;margin-bottom:25px}
+.btn{display:inline-block;background:var(--yellow);color:#111;padding:13px 22px;border-radius:9px;font-weight:800;border:0;cursor:pointer}
+.hero-products{margin-left:auto;display:grid;grid-template-columns:repeat(3,120px);gap:15px;position:relative;z-index:2;transform:rotate(-3deg)}
+.visual{height:145px;background:linear-gradient(145deg,#f8f8f8,#b9bec4);border-radius:22px;display:flex;align-items:center;justify-content:center;color:#111;font-size:54px;box-shadow:0 18px 45px #0008}
+.section{padding:55px 5%;max-width:1250px;margin:auto}.title{font-size:28px;margin-bottom:25px}.title:before{content:"";display:inline-block;width:6px;height:29px;background:var(--yellow);margin-right:10px;vertical-align:-4px}
+.categories{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.cat{background:#fff;padding:22px 10px;border-radius:12px;text-align:center;box-shadow:0 4px 16px #0000000b;transition:.2s}.cat:hover{transform:translateY(-4px)}.cat .ico{font-size:40px;margin-bottom:8px}.cat strong{font-size:13px;display:block}.cat small{color:var(--muted)}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid #e4e8ed;border-radius:13px;overflow:hidden}.pic{height:190px;background:#f0f2f5;display:flex;align-items:center;justify-content:center;font-size:85px}.info{padding:17px}.info h3{font-size:16px;margin-bottom:6px}.price{font-weight:900;font-size:19px;margin:9px 0 13px}.add{width:100%;padding:11px;background:var(--yellow);border:0;border-radius:8px;font-weight:bold;cursor:pointer}
+.benefits{background:#07101a;color:#fff;display:grid;grid-template-columns:repeat(4,1fr);gap:15px;padding:20px 5%;max-width:1250px;margin:0 auto;border-radius:12px}.benefit{text-align:center}.benefit b{display:block;color:var(--yellow);font-size:26px}.benefit span{font-size:13px;color:#d8dde2}
+.promos{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.promo{padding:28px;border-radius:12px;background:#0d1621;color:#fff;min-height:145px}.promo:nth-child(2){background:#f4c76c;color:#111}.promo:nth-child(3){background:#1a2028}.promo h3{margin:7px 0}.promo a{color:var(--yellow);font-weight:bold}.promo:nth-child(2) a{color:#111}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.review{background:#fff;padding:20px;border-radius:12px;border:1px solid #e4e8ed}.stars{color:#e4b400;letter-spacing:2px}.review b{display:block;margin:7px 0}
+footer{background:#07101a;color:#d8dee5;padding:42px 5% 18px}.foot{max-width:1250px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1.5fr 1fr;gap:35px}.foot h3{color:#fff;margin-bottom:12px}.foot a,.foot p{display:block;font-size:13px;margin:6px 0;color:#b9c2cb}.brandline{font-size:24px;font-weight:900}.brandline i{color:var(--yellow);font-style:normal}.copy{border-top:1px solid #26313d;margin-top:30px;padding-top:15px;text-align:center;font-size:12px}
+.whatsapp{position:fixed;right:18px;bottom:18px;background:#20c766;color:#fff;padding:13px 18px;border-radius:30px;font-weight:bold;box-shadow:0 8px 25px #0004;z-index:20}
+.overlay{display:none;position:fixed;inset:0;background:#0008;z-index:30}.drawer{position:absolute;right:0;top:0;height:100%;width:min(420px,92%);background:#fff;padding:25px;overflow:auto}.overlay.open{display:block}.drawer-head{display:flex;justify-content:space-between;font-size:22px;font-weight:bold;margin-bottom:20px}.close{cursor:pointer}.cart-item{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #ddd;padding:12px 0}.empty{color:var(--muted);text-align:center;padding:30px}.total{font-size:20px;font-weight:bold;margin:20px 0}
+@media(max-width:900px){.links{display:none}.hero{padding:55px 6%}.hero-products{display:none}.categories{grid-template-columns:repeat(3,1fr)}.products{grid-template-columns:repeat(2,1fr)}.benefits{grid-template-columns:repeat(2,1fr);border-radius:0}.promos,.reviews{grid-template-columns:1fr}.foot{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.top{font-size:11px}.hero{min-height:450px}.hero h1{font-size:48px}.categories,.products{grid-template-columns:1fr 1fr}.section{padding:40px 4%}.foot{grid-template-columns:1fr}.benefits{grid-template-columns:1fr 1fr;padding:18px 4%}.whatsapp{right:12px;bottom:12px;font-size:13px}}
+</style>
+</head>
+<body>
+<div class="top"><div>📞 0309 9480612 &nbsp; ✉️ malanggujjar5341@gmail.com</div><div><b>🚚 Fast Delivery</b> &nbsp; 🔒 Secure Payment &nbsp; ⭐ Best Quality</div></div>
+
+<nav>
+  <a class="logo" href="#">M<i>G</i><small>MOBILE ACCESSORIES</small></a>
+  <div class="links"><a href="#home">Home</a><a href="#products">All Products</a><a href="#categories">Categories</a><a href="#offers">Offers</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div>
+  <button class="cart" onclick="openCart()">🛒 Cart (<span id="count">0</span>)</button>
+</nav>
+
+<section class="hero" id="home">
+ <div class="hero-content">
+   <div class="eyebrow">MG MOBILE ACCESSORIES</div>
+   <h1>Your Mobile<br><span>Our Priority</span></h1>
+   <p>Best Quality Mobile Accessories at Unbeatable Prices.</p>
+   <a class="btn" href="#products">Shop Now →</a>
+ </div>
+ <div class="hero-products"><div class="visual">📱</div><div class="visual">🎧</div><div class="visual">🔋</div><div class="visual">🔌</div><div class="visual">📦</div><div class="visual">⚡</div></div>
+</section>
+
+<section class="section" id="categories">
+ <h2 class="title">Shop By Category</h2>
+ <div class="categories">
+  <a class="cat" href="#products"><div class="ico">🔌</div><strong>Chargers & Cables</strong><small>View All →</small></a>
+  <a class="cat" href="#products"><div class="ico">🎧</div><strong>Earbuds & Headphones</strong><small>View All →</small></a>
+  <a class="cat" href="#products"><div class="ico">🔋</div><strong>Power Banks</strong><small>View All →</small></a>
+  <a class="cat" href="#products"><div class="ico">📱</div><strong>Mobile Covers</strong><small>View All →</small></a>
+  <a class="cat" href="#products"><div class="ico">🛡️</div><strong>Screen Protectors</strong><small>View All →</small></a>
+  <a class="cat" href="#products"><div class="ico">🧰</div><strong>Other Accessories</strong><small>View All →</small></a>
+ </div>
+</section>
+
+<section class="section" id="products">
+ <h2 class="title">Featured Products</h2>
+ <div class="products">
+  <article class="card"><div class="pic">🔌</div><div class="info"><h3>Fast Charging Adapter (65W)</h3><div class="price">Rs. 1,499</div><button class="add" onclick="add('Fast Charging Adapter (65W)',1499)">🛒 Add to Cart</button></div></article>
+  <article class="card"><div class="pic">🔗</div><div class="info"><h3>Type-C Data Cable (1M)</h3><div class="price">Rs. 499</div><button class="add" onclick="add('Type-C Data Cable (1M)',499)">🛒 Add to Cart</button></div></article>
+  <article class="card"><div class="pic">🎧</div><div class="info"><h3>TWS Wireless Earbuds</h3><div class="price">Rs. 2,499</div><button class="add" onclick="add('TWS Wireless Earbuds',2499)">🛒 Add to Cart</button></div></article>
+  <article class="card"><div class="pic">🔋</div><div class="info"><h3>Power Bank 10000mAh</h3><div class="price">Rs. 2,299</div><button class="add" onclick="add('Power Bank 10000mAh',2299)">🛒 Add to Cart</button></div></article>
+  <article class="card"><div class="pic">📱</div><div class="info"><h3>Silicone Back Cover</h3><div class="price">Rs. 699</div><button class="add" onclick="add('Silicone Back Cover',699)">🛒 Add to Cart</button></div></article>
+  <article class="card"><div class="pic">🎶</div><div class="info"><h3>Bluetooth Headphones</h3><div class="price">Rs. 3,499</div><button class="add" onclick="add('Bluetooth Headphones',3499)">🛒 Add to Cart</button></div></article>
+ </div>
+</section>
+
+<div class="benefits">
+ <div class="benefit"><b>🚚</b>Free Delivery<span>All over Pakistan</span></div>
+ <div class="benefit"><b>🛡️</b>Safe & Secure Payments<span>Easy & Trusted</span></div>
+ <div class="benefit"><b>🎧</b>24/7 Customer Support<span>0309 9480612</span></div>
+ <div class="benefit"><b>🏆</b>100% Original Products<span>With Warranty</span></div>
+</div>
+
+<section class="section" id="offers">
+ <h2 class="title">Latest Offers</h2>
+ <div class="promos">
+  <div class="promo"><small>CHARGERS & CABLES</small><h3>Keep Your Device Powered</h3><a href="#products">Shop Now →</a></div>
+  <div class="promo"><small>MOBILE COVERS</small><h3>Style Meets Protection</h3><a href="#products">Shop Now →</a></div>
+  <div class="promo"><small>EARBUDS & HEADPHONES</small><h3>Feel the Real Sound</h3><a href="#products">Shop Now →</a></div>
+ </div>
+</section>
+
+<section class="section" id="reviews">
+ <h2 class="title">What Our Customers Say</h2>
+ <div class="reviews">
+  <div class="review"><span class="stars">★★★★★</span><b>Ahmed Raza</b><p>“MG Mobile Accessories se liya hua charger bohat acha hai. Original product mila aur delivery bhi time par hui.”</p></div>
+  <div class="review"><span class="stars">★★★★★</span><b>Sana Khan</b><p>“Covers ki quality bohat behtareen hai. Prices bhi reasonable hain. Definitely again order karungi.”</p></div>
+  <div class="review"><span class="stars">★★★★★</span><b>Usman Ali</b><p>“Bohat achi service hai. WhatsApp par bhi fast response mila hai.”</p></div>
+ </div>
+</section>
+
+<footer id="contact">
+ <div class="foot">
+  <div><div class="brandline">M<i>G</i> MOBILE ACCESSORIES</div><p>Better Accessories<br>Better Connection</p></div>
+  <div><h3>Quick Links</h3><a href="#home">Home</a><a href="#products">All Products</a><a href="#categories">Categories</a><a href="#reviews">Reviews</a></div>
+  <div><h3>Contact Us</h3><p>📞 0309 9480612</p><p>✉️ malanggujjar5341@gmail.com</p><p>📍 Pakistan</p></div>
+  <div><h3>Follow Us</h3><p>Facebook &nbsp; Instagram &nbsp; TikTok &nbsp; YouTube</p></div>
+ </div>
+ <div class="copy">© 2026 MG Mobile Accessories. All Rights Reserved.</div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/923099480612" target="_blank">💬 Chat on WhatsApp</a>
+
+<div class="overlay" id="overlay" onclick="if(event.target===this)closeCart()">
+ <div class="drawer">
+  <div class="drawer-head">Your Cart <span class="close" onclick="closeCart()">×</span></div>
+  <div id="cartItems" class="empty">Your cart is empty.</div>
+  <div class="total" id="total"></div>
+  <button class="btn" style="width:100%" onclick="checkout()">Order on WhatsApp</button>
+ </div>
+</div>
+
+<script>
+let cart=[];
+function add(name,price){cart.push({name,price});render();openCart()}
+function render(){
+ document.getElementById('count').textContent=cart.length;
+ const box=document.getElementById('cartItems');
+ if(!cart.length){box.className='empty';box.textContent='Your cart is empty.';document.getElementById('total').textContent='';return}
+ box.className='';
+ box.innerHTML=cart.map((x,i)=>`<div class="cart-item"><span>${x.name}</span><b>Rs. ${x.price.toLocaleString()} <button onclick="removeItem(${i})" style="border:0;background:none;cursor:pointer">✕</button></b></div>`).join('');
+ document.getElementById('total').textContent='Total: Rs. '+cart.reduce((a,x)=>a+x.price,0).toLocaleString();
+}
+function removeItem(i){cart.splice(i,1);render()}
+function openCart(){document.getElementById('overlay').classList.add('open')}
+function closeCart(){document.getElementById('overlay').classList.remove('open')}
+function checkout(){
+ if(!cart.length)return;
+ let text='Assalam-o-Alaikum, I want to order:%0A'+cart.map(x=>`• ${x.name} - Rs. ${x.price}`).join('%0A')+'%0A%0ATotal: Rs. '+cart.reduce((a,x)=>a+x.price,0);
+ window.open('https://wa.me/923099480612?text='+text,'_blank');
+}
+render();
+</script>
+</body>
+</html>
